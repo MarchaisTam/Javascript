@@ -39,22 +39,22 @@ console.log(b);
 
 function addition(a, b) {
     let res = a + b;
-    alert("L'addition de " + a + " + " + b + " est égale à " + res);
+    alert("L'addition " + a + " et " + b + " est égale à " + res);
 }
 
 function soustraction(a, b) {
     let res = a - b;
-    alert("La soustraction " + a + " + " + b + " est égale à " + res);
+    alert("La soustraction " + a + " moins " + b + " est égale à " + res);
 }
 
 function multiplication(a, b) {
     let res = a * b;
-    alert("La multiplication de " + a + " + " + b + " est égale à " + res);
+    alert("La multiplication de " + a + " fois " + b + " est égale à " + res);
 }
 
 function division(a, b) {
     let res = a / b;
-    alert("La division " + a + " + " + b + " est égale à " + res);
+    alert("La division " + a + " divisé par " + b + " est égale à " + res);
 }
 
 switch (operation) {
