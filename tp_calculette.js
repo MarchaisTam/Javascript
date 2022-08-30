@@ -73,6 +73,3 @@ switch (operation) {
     default :
         alert("opération non reconnu");
 }
-
-
-
