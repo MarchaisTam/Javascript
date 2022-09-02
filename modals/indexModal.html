@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleModal.css">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Trigger/Open The Modal -->
+<img src="../img/cookie.png" class="boutonCookie" alt="cookie">
+<img src="../img/mail.svg" class="boutonMail" alt="mail">
+<button class="boutonSinscrire">S'incrire</button>
+
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal1-content">
+        <div class="modal1-body">
+            <div class="modal1-header">
+                <img class = "cookies" src="../img/cookie_back.jpg" alt="cookies">
+            </div>
+            <div class="modal-main">
+                <span class="close1">&times;</span>
+                <h2>Votre vie privée nous concerne !</h2>
+                <p>Notre site et ses partenaires souhaitent utiliser des cookies ou autres traceurs et traiter vos données personnelles (données de navigation, données renseignées dans votre compte et/ou lors de l'utilisation des services, etc.) pour :</p>
+                <p>- Mesure d'audience,</p>
+                <p>- Fonctionnalités liées aux réseaux sociaux,</p>
+                <p>- Contenu personnalisé et mesure de performance du contenu,</p>
+                <p>- Publicités personnalisées, mesure de performance des publicités et données d'audience,</p>
+                <p>- Développer et améliorer les produits,</p>
+                <p>- Données de géolocalisation précises et identification par analyse du terminal,</p>
+            </div>
+        </div>
+        <div class="modal1-footer">
+            <p>Parametrer</p>
+            <p>Je n'accepte rien</p>
+            <p>J'accepte tout</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="myModal2" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal2-content">
+        <div class="modal2-body">
+            <div class="modal2-header">
+                <img class = "mailBoxes" src="../img/mail_boxes.jpg" alt="mail boxes">
+            </div>
+            <div class="modal-main modal-main2">
+                <span class="close2">&times;</span>
+                <h2>Rester à l'écoute des nouvelles</h2>
+                <p>Une news letter clair et efficace :</p>
+                <p>- Une seule par mois</p>
+                <p>- Nous ne communiquons votre addresse à personne</p>
+                <p>- Du contenus pertinent en relation avec vos préférences</p>
+                <p>- Du contenus pertinent en relation avec vos préférences</p>
+                <p>Votre Email</p>
+                <input type="text" class="emailInput">
+                <img src="../img/news_bike.png" alt="">
+                <button class="boutonValider">Valider</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="myModal3" class="modal">
+    <div class="modal3-content">
+        <div class="modal3-body">
+            <span class="close3">&times;</span>
+            <div class="seConnecter">
+                <h2>Se connecter</h2>
+                <label for="nomDutilisateur">Nom d'utilisateur :</label>
+                <input type="text" name="nomDutilisateur" id="nomDutilisateur">
+                <label for="password">Mot de Passe :</label>
+                <input type="password" name="userPassword" id="userPassword">
+                <button>Se connecter</button>
+            </div>
+            <div class="sinscrire">
+                <h2>S'incrire</h2>
+                <label for="nomDutilisateur">Choisissez votre nom d'utilisateur :</label>
+                <input type="text" name="nomDutilisateur" id="nomDutilisateur">
+                <label for="UserMail">Mail :</label>
+                <input type="text" name="UserMail" id="userMail">
+                <label for="userPassword">Mot de Passe :</label>
+                <input type="password" name="userPassword" id="userPassword">
+                <button>Se connecter</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="scriptModal.js"></script>
+
+</body>
+</html>
