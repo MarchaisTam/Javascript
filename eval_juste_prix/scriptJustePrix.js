@@ -30,21 +30,22 @@ let boutonDemarrer = document.querySelector(".boutonDemarrer");
 let message = document.querySelector(".message");
 
 const nbrSecret = Math.floor(Math.random() * 1001);
+let compteur = 0;
 
 boutonDemarrer.addEventListener("click", function () {
-    console.log(userNumberInput.value);
+    console.log(Number(userNumberInput.value));
     console.log(nbrSecret);
     
-    let compteur = 0;
     if (verifier() == "plus") {
-        message.innerHTML = "Plus";
+        message.textContent = "Plus"
         compteur++;
     } else if (verifier() == "moins") {
-        message.innerHTML = "Moins";
+        message.textContent = "Moins";
         compteur++;
     } else if (verifier() == true) {
-        message.innerHTML = "Bravo Vous avez trouvé en " + compteur + " coups";
-        nbrSecret = getRandomInt();
+        message.textContent = "Bravo Vous avez trouvé en " + compteur + " coups";
+        nbrSecret = Math.floor(Math.random() * 1001);
+        compteur = 0;
     }
 })
 
