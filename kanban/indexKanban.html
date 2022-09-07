@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleKanban.css">
+    <title>Kanban</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Kanban</h1>
+            <div class="topDiv">
+                <div class="addNoteWrapper">
+                    <h2>Add Notes</h2>
+                    <div class="addNoteForm">
+                        <label for="titleOfNote">Title of note</label>
+                        <input class="titleOfNote" type="text" placeholder="Title">
+                        <label for="contentOfNote">Content of note</label>
+                        <input class="contentOfNote" type="text" placeholder="Content">
+                    </div>
+                    <button>Validation</button>
+                </div>
+                <div class="deleteNote">
+                    <h2>Delete notes</h2>
+                    <img height="200px" src="./trash.png" alt="" ondragover="return over(event)" ondrop="return deleteDrop(event)">
+                </div>
+            </div>
+        </div>
+        <div class="bottomDiv">
+            <div>
+                <h2>TO DO</h2>
+                <div class="todo" ondragstart="start(event)" ondragover="return over(event)" ondrop="return drop(event)">
+                    
+                </div>
+            </div>
+            <div>
+                <h2>DONE</h2>
+                <div class="done" ondragstart="start(event)" ondragover="return over(event)" ondrop="return drop(event)">
+
+                </div>
+            </div>
+            <div>
+                <h2>VERIFIED</h2>
+                <div class="verified" ondragstart="start(event)" ondragover="return over(event)" ondrop="return drop(event)">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scriptKanban.js"></script>
+</body>
+</html>
