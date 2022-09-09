@@ -1,0 +1,31 @@
+body h1 {
+    text-align: center;
+    padding: 75px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.inputVille, .boutonAjouter {
+    margin: 20px;
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.gap{
+    height: 50px;
+}
